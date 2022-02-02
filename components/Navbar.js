@@ -12,7 +12,7 @@ export default function Navbar() {
 
 
                     </>),
-            href: '#',
+            href: '#home',
             active: true,
         },
         {
@@ -23,7 +23,7 @@ export default function Navbar() {
                     </svg>
 
                 </>),
-            href: '#Services',
+            href: '#services',
             active: false,
         },
         {
@@ -49,13 +49,14 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="mb-4 sticky top-0  z-20 overflow-y-auto">
+        <header className="sticky top-0  z-40 overflow-y-auto w-auto">
             <nav className=' bg-slate-700 min-h-[48px] flex justify-center items-center shadow-md shadow-slate-800'>
-                    <div className="container mx-auto px-4 flex justify-between"> 
+                    <div className="container mx-auto px-4 flex justify-between items-center"> 
                     <div className="logo font-bold">
                     <span className='text-green-300'>ADAZOL</span>HUB.
                     </div>
-                    <div className="menu fixed bottom-0 mb-8 mx-auto bg-slate-600 bg-opacity-[.2] backdrop-blur-sm z-50 px-1 py-1 rounded-xl -translate-x-1/2 w-max left-1/2">
+                    <div className="nav-links flex">
+                    <div className="menu fixed sm:static bottom-0 mb-8 sm:mb-0 mx-auto sm:p-0 sm:scale-75 bg-slate-800/50 backdrop-blur-sm z-50 px-1 py-1 rounded-xl -translate-x-1/2 sm:-translate-x-0 sm:left-0 w-max left-1/2">
                         <div className="relative left-0 w-full">
                             <ul className="list-reset flex gap-2  justify-between">
                                 {navMenu.map(item => {
@@ -76,6 +77,7 @@ export default function Navbar() {
                     <a href="#" className="fill-green-300 rounded-lg">
                         <InfoSquare/>
                     </a>
+                    </div>
                     </div>
                     </div>
                     
