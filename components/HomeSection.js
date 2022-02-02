@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import person from '../assets/images/person.png'
 import background_layout from '../assets/images/background_layout.jpg'
-import Behance from '../assets/svg/Behance.svg'
-import Dribbble from '../assets/svg/dribbble.svg'
-import Facebook from '../assets/svg/facebook.svg'
-import Twitter from '../assets/svg/twitter.svg'
+import Behance from './svg/Behance.svg'
+import Dribbble from './svg/dribbble.svg'
+import Facebook from './svg/facebook.svg'
+import Twitter from './svg/twitter.svg'
 import { Dots, Profile, Star } from './NavSVG'
 
 
