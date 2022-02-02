@@ -1,32 +1,32 @@
 import Image from 'next/image'
 import person from '../assets/images/person.png'
-import Behance from '../assets/svg/behance.svg'
-import Dribbble from '../assets/svg/dribbble.svg'
-import Facebook from '../assets/svg/facebook.svg'
-import Twitter from '../assets/svg/twitter.svg'
+// import Behance from '../assets/svg/behance.svg'
+// import Dribbble from '../assets/svg/dribbble.svg'
+// import Facebook from '../assets/svg/facebook.svg'
+// import Twitter from '../assets/svg/twitter.svg'
 import { Dots } from './NavSVG'
 
 
 export default function HomeSection() {
 
-    const social = [
-        {
-            svg: Behance,
-            name: 'Behance',
-        },
-        {
-            svg: Dribbble,
-            name: 'Dribbble',
-        },
-        {
-            svg: Facebook,
-            name: 'Facebook',
-        },
-        {
-            svg: Twitter,
-            name: 'Twitter',
-        },
-    ]
+    // const social = [
+    //     {
+    //         svg: Behance,
+    //         name: 'Behance',
+    //     },
+    //     {
+    //         svg: Dribbble,
+    //         name: 'Dribbble',
+    //     },
+    //     {
+    //         svg: Facebook,
+    //         name: 'Facebook',
+    //     },
+    //     {
+    //         svg: Twitter,
+    //         name: 'Twitter',
+    //     },
+    // ]
 
     return (
         <section className='h-full w-full snap-start scroll-mt-[72px] transition-all overflow-y-auto overflow-x-hidden'>
