@@ -28,5 +28,13 @@
       box-sizing: border-box;
     }
 
+    :root {
+      --nav-height: 48px;
+    }
+
+    .shape {
+      clip-path: polygon(10% 43%, 75% 16%, 100% 59%, 16% 86%);
+    }
+
 }
 

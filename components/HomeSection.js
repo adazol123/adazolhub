@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import person from '../assets/images/person.png'
-import background_layout from '../assets/images/background_layout.jpg'
+import background_layout from '../assets/images/bg-main.png'
 import behance from '../assets/images/behance.png'
 import dribbble from '../assets/images/dribbble.png'
 import facebook from '../assets/images/facebook.png'
 import twitter from '../assets/images/twitter.png'
 import { Dots, Profile, Star } from './NavSVG'
+import Container from './Container'
 
 
 export default function HomeSection() {
@@ -51,65 +52,32 @@ export default function HomeSection() {
     ]
 
     return (
-        <section id='home' className='h-[98%] relative w-full snap-start scroll-mt-[48px] transition-all  overflow-hidden flex flex-col sm:pt-16'>
-            <div className='h-full w-full bg-cover bg-center bg-no-repeat  bg-[url(./background_layout.jpg)] absolute opacity-5 bg-blend-multiply blur-sm' />
-            <div className="w-full h-screen absolute top-0 hidden bg-slate-700 sm:flex grayscale bg-gradient-to-b  to-slate-800  opacity-20 blur-lg">
-                {/* <Image
-                    src={background_layout}
-                    alt='background'
-                    className='absolute container inset-0 h-full w-full object-cover bg-blend-multiply -z-10'
-                    height={920}
-                    
-                /> */}
-            </div>
-            <div className="container top-0 mx-auto px-2 grid grid-cols-1 place-items-center sm:grid-cols-2 mt-0 relative ">
-                <div className="absolute top-5 right-2 w-0">
-                        <Dots/>
-                    </div>
-                <div className="bg-transparent h-72 w-72 top-0  z-20">
-                    <Image
-                        src={person}
-                        alt="home-section-1"
-                        objectFit='contain'
-                        width={'380px'}
-                        height={'380px'}
-                        placeholder='blur'
-                        className=" absolute transform transition-all duration-500 ease-in-out " 
-                        priority
-                        objectPosition={'top'}
-                    />
+        <Container> 
+            <div className="flex items-end justify-between w-full h-[calc(100vh-(var(--nav-height)*4))] relative">
 
+
+                <div className=" title mb-12 sm:mb-4 z-10 transition-all">
+                    <h1 className="text-4xl font-bold mb-2">
+                        <span className="text-green-300">EXPERIENCE </span>
+                        <span className="text-slate-100">MATTER</span>
+                    </h1>
+                    <p className='text-slate-400 max-w-sm'>
+                    Your success is our objective. We’ll care for your brand, product and services as much as you do.
+                    </p>
+                    <button className='
+                        px-4 py-2 bg-green-300 text-slate-900 font-bold rounded-lg mt-8 border border-transparent
+                        hover:bg-transparent hover:text-green-300 hover:border-green-300
+                        animate-pulse hover:animate-none
+                        '>
+                        Contact Me
+                    </button>
                 </div>
-                <div className=" relative flex gap-4 flex-col justify-center mx-2 md:mx-4 z-10">
-                    <div className="z-20 px-8">
-                        <h2 className="font-bold whitespace-nowrap text-2xl mb-2">
-                            <span className='text-green-300'>EXPERIENCE</span> MATTER
-                        </h2>
-
-                        <p className='max-w-xl mb-8 text-gray-500 text-sm'>Your success is our objective. We’ll care for your brand, product and services as much as you do.</p>
-                        <button className='px-3 py-2 border border-green-300 text-green-300 rounded-lg text-md'>
-                            Contact Us
-                        </button>
-
-                    </div>
-                    <div className="absolute w-full left-0 z-0  bg-[#25303f] hover:shadow-md shadow-slate-800  h-[260px] -top-14 rounded-2xl"/>
-
+                <div className="scroll transition-all absolute left-1/2 -translate-x-1/2 sm:static grid -mb-8 sm:mb-20 animate-bounce duration-600">
+                    <hr className='translate-y-3 translate-x-12 sm:translate-x-0 sm:rotate-90  sm:-translate-y-8 ' />
+                    <p className='font-thin'>Scroll</p>
+                    <hr className='-translate-y-3 -translate-x-12 sm:-translate-x-0 sm:rotate-90 sm:translate-y-8'/>
                 </div>
             </div>
-            <div className="social  h-[30%] w-full flex z-30  px-4">
-                <div className="container relative mx-auto item-center max-w-sm mt-6 px-4 flex flex-row justify-between bottom-0">
-                    <div className="absolute bg-slate-700 opacity-70 bg-gradient-to-tr h-[5em] w-[100%] rounded-2xl top-[40%] -left-1"/>
-                    {social.map( icon => {
-                        return (
-                            <button key={icon.name} className='hover:-translate-y-3 hover:scale-125 hover:font-bold text-slate-500 fill-gray-400  hover:text-green-300 grayscale-[0%] hover:grayscale-0 transition-all hover:fill-green-400 flex flex-col justify-center items-center'>
-                               <Image src={icon.icon} alt={icon.name} width={46} height={46} />
-                                <span className='text-sm '>{icon.name}</span>
-                            </button>
-                        )
-                    })
-}                   
-                </div>
-            </div>
-        </section>
+        </Container>
     )
 }
