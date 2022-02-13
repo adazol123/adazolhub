@@ -72,11 +72,7 @@ export default function HomeSection() {
                         Contact Me
                     </button>
                 </div>
-                <div className="scroll transition-all absolute left-1/2 -translate-x-1/2 sm:static grid -mb-8 sm:mb-20 animate-bounce duration-600">
-                    <hr className='translate-y-3 translate-x-12 sm:translate-x-0 sm:rotate-90  sm:-translate-y-8 ' />
-                    <p className='font-thin'>Scroll</p>
-                    <hr className='-translate-y-3 -translate-x-12 sm:-translate-x-0 sm:rotate-90 sm:translate-y-8'/>
-                </div>
+
             </div>
         </Container>
     )
