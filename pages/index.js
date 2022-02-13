@@ -10,9 +10,9 @@ import Services from '../components/Services'
 
 export default function Home() {
   return (
-    <div className="relative h-screen snap-y w-full snap-proximity scroll-smooth overflow-y-scroll">
+    <div className="relative h-screen snap-y w-screen snap-proximity scroll-smooth overflow-y-scroll">
       <div className=" fixed top-0 left-0 w-screen h-screen -z-[9] ">
-        <div className=" fixed top-0 left-0 w-screen h-screen -z-10 bg-slate-600/80 bg-[url(./bg-main.png)]  bg-cover bg-no-repeat bg-left bg-blend-overlay"/>
+        <div className=" fixed top-0 left-0 w-full h-screen -z-10 bg-slate-600/80 bg-[url(./bg-main.png)]  bg-cover bg-no-repeat bg-left bg-blend-overlay"/>
       </div>
       <Head>
         <title>Adazolhub</title>

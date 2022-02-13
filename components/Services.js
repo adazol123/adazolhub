@@ -10,18 +10,18 @@ import Coin from './svg/CoinSVG.svg';
 function Services() {
   return (
    <section id='Portfolio' className=" bg-gradient-to-tr from-[#030309] to-[#162731]
-   mx-auto w-full relative  min-h-screen snap-start scroll-mt-20 transition-all space-y-20">
+   mx-auto w-full relative  min-h-screen snap-start scroll-mt-20 transition-all space-y-20 ">
        <div className="container mx-auto w-full  px-4 mb-8 ">
         <p className='text-slate-700'> SERVICES</p>
         <h2 className='text-3xl font-bold'>
             WHAT IS OUR <span className='text-green-300'>GOAL</span>?
         </h2>
-        <p className='text-slate-700 max-w-lg font-thin text-sm'>
+        <p className='text-slate-700 max-w-md font-thin text-sm'>
         We want to provide the full set of services which can help you catch the eye of your target audience. Moreover, the final product will be reliable, scalable and protected, so there is no change to be beaten in your area.
         </p>
        </div>
 
-       <div className="container mx-auto  px-4  gap-y-10 gap-x-2 flex flex-col sm:flex-row flex-wrap  w-full  items-stretch  justify-evenly">
+       <div className="container mx-auto  px-4  gap-y-10 gap-x-2 flex flex-col sm:flex-row flex-wrap  w-full  items-stretch  justify-evenly ">
        <Card 
             title = 'Web Development'
             content = 'From the landing page and up to the markeplace, our developers will provide the best solution to be on the top as long as possible. Do you want to use CMS, but you`ve got hesitation about which system to use? Let`s take a look at the concept of product.'

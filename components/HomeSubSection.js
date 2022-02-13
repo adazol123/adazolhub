@@ -6,9 +6,9 @@ import Card from './Card'
 export default function HomeSubSection() {
     return ( 
         <section id='services' className="bg-gradient-to-br from-[#030309] to-[#162731] h-[calc(100%)] w-full snap-start scroll-mt-12 transition-all ">
-        <div className="container relative mx-auto w-screen h-[100vh] px-4 flex justify-end pt-12">
+        <div className="container relative mx-auto w-full h-[100vh] px-4 flex justify-end pt-12">
             <div className="section__content grid gap-8  flex-col content-start">
-            <div className="hero__cover bg-[url(./meeting.png)] w-full h-[20rem] bg-cover bg-no-repeat bg-left bg-blend-overlay"/>
+            <div className=" z-10 hero__cover bg-[url(./meeting.png)] w-full h-[20rem] bg-cover bg-no-repeat bg-left bg-blend-overlay"/>
 
         <div className="content mx-4 w-[calc(100%-2rem)] h-full flex flex-col content-start items-center sm:items-end text-center sm:text-right ">
                 <h2 className="font-bold text-4xl max-w-[24rem] mb-4">
@@ -19,7 +19,7 @@ export default function HomeSubSection() {
                 </p>
 
         </div>
-                <div className=" transition-opacity duration-700 absolute opacity-0 md:opacity-50 md:flex left-0 top-0 w-s h-24">
+                <div className=" transition-opacity duration-700 absolute opacity-0 hidden md:opacity-90 sm:flex left-0 top-0 w-s h-24">
                     <Penta/>
                 </div>
             </div>
