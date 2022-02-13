@@ -56,10 +56,10 @@ export function Profile() {
     )
 }
 
-export function InfoSquare() {
+export function InfoSquare(props) {
     return (
         <>
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+            <svg width="inherit" height="inherit" viewBox="0 0 21 21" fill="inherit" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path fillRule="evenodd" clipRule="evenodd" d="M12.2505 1.5C14.7922 1.5 16.5 3.2835 16.5 5.937V12.063C16.5 14.7165 14.7922 16.5 12.249 16.5H5.748C3.207 16.5 1.5 14.7165 1.5 12.063V5.937C1.5 3.2835 3.207 1.5 5.748 1.5H12.2505ZM12.2505 2.625H5.748C3.85125 2.625 2.625 3.92475 2.625 5.937V12.063C2.625 14.0752 3.85125 15.375 5.748 15.375H12.249C14.148 15.375 15.375 14.0752 15.375 12.063V5.937C15.375 3.92475 14.148 2.625 12.2505 2.625ZM8.9955 8.4375C9.306 8.4375 9.558 8.6895 9.558 9V12C9.558 12.3105 9.306 12.5625 8.9955 12.5625C8.685 12.5625 8.433 12.3105 8.433 12V9C8.433 8.6895 8.685 8.4375 8.9955 8.4375ZM8.99917 5.40308C9.41392 5.40308 9.74917 5.73833 9.74917 6.15308C9.74917 6.56783 9.41392 6.90308 8.99917 6.90308C8.58442 6.90308 8.24543 6.56783 8.24543 6.15308C8.24543 5.73833 8.57768 5.40308 8.99168 5.40308H8.99917Z"/>
             </svg>
 
@@ -69,7 +69,7 @@ export function InfoSquare() {
 
 export function Dots() {
     return (<>
-        <svg width="119" height="122" viewBox="0 0 119 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="119" height="122" viewBox="0 0 119 122" fill="none" xmlns="http://www.w3.org/2000/svg" >
         <circle cx="59.8" cy="69" r="4.6" fill="#C4C4C4" fillOpacity="0.04"/>
         <circle cx="59.8" cy="4.6" r="4.6" fill="#C4C4C4" fillOpacity="0.04"/>
         <circle cx="96.6" cy="69" r="4.6" fill="#C4C4C4" fillOpacity="0.04"/>

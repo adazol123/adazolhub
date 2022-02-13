@@ -52,7 +52,7 @@ export default function HomeSection() {
     ]
 
     return (
-        <Container> 
+        <Container id='home'> 
             <div className="flex items-end justify-between w-full h-[calc(100vh-(var(--nav-height)*4))] relative">
 
 

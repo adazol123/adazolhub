@@ -5,6 +5,7 @@ import HomeSection from '../components/HomeSection'
 import HomeSubSection from '../components/HomeSubSection'
 import Navbar from '../components/Navbar'
 import Navlist from '../components/Navlist'
+import Services from '../components/Services'
 // import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,8 +23,9 @@ export default function Home() {
       <Navlist/>
       <HomeSection/>
       <HomeSubSection/>
-      <section id='Portfolio'>
-        <div className=" bg-gradient-to-tr from-[#030309] to-[#162731] w-full h-screen grid content-center justify-center text-4xl text-green-300/100 text-center">
+      <Services/>
+      <section id='About'>
+        <div className=" bg-gradient-to-br from-[#030309] to-[#162731] w-full h-screen grid content-center justify-center text-4xl text-green-300/100 text-center">
           <h2 className='max-w-sm uppercase animate-bounce'>Page currently on building phase...</h2>
 
         </div>

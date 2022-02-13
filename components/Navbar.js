@@ -17,7 +17,7 @@ export default function Navbar() {
                         
 
                             <div className="contact-button transition-all grid place-items-center ">
-                                <a href="#" className="fill-green-300 rounded-lg">
+                                <a href="#" className="w-7 fill-green-300 rounded-lg">
                                     <InfoSquare/>
                                 </a>
                             </div>
