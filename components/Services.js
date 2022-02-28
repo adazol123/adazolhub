@@ -11,14 +11,14 @@ function Services() {
   return (
    <section id='Portfolio' className=" bg-gradient-to-tr from-[#030309] to-[#162731]
    mx-auto w-full relative  min-h-screen snap-start scroll-mt-20 transition-all space-y-20 ">
-       <div className="container mx-auto w-full  px-4 mb-8 ">
-        <p className='text-slate-700'> SERVICES</p>
-        <h2 className='text-3xl font-bold'>
-            WHAT IS OUR <span className='text-green-300'>GOAL</span>?
-        </h2>
-        <p className='text-slate-700 max-w-md font-thin text-sm'>
-        We want to provide the full set of services which can help you catch the eye of your target audience. Moreover, the final product will be reliable, scalable and protected, so there is no change to be beaten in your area.
-        </p>
+       <div className="container mx-auto px-4 mb-8 space-y-2 flex flex-col border-0">
+          <p className='bg-slate-800/30 w-max px-2 py-1 mt-4 text-xs text-green-300/50 text rounded-lg'> SERVICES</p>
+          <h2 className='text-4xl font-bold'>
+               WHAT IS OUR <span className='text-green-300'>GOAL</span>?
+          </h2>
+          <p className='text-slate-700 max-w-md font-thin text-sm'>
+          We want to provide the full set of services which can help you catch the eye of your target audience. Moreover, the final product will be reliable, scalable and protected, so there is no change to be beaten in your area.
+          </p>
        </div>
 
        <div className="container mx-auto  px-4  gap-y-10 gap-x-2 flex flex-col sm:flex-row flex-wrap  w-full  items-stretch  justify-evenly ">

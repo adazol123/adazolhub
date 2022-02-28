@@ -65,11 +65,11 @@ export default function HomeSection() {
                     Your success is our objective. We’ll care for your brand, product and services as much as you do.
                     </p>
                     <button className='
-                        px-4 py-2 bg-green-300 text-slate-900 font-bold rounded-lg mt-8 border border-transparent
-                        hover:bg-transparent hover:text-green-300 hover:border-green-300
-                        animate-pulse hover:animate-none
+                        px-4 py-2 hover:bg-green-300 hover:text-slate-900 font-thin rounded-lg mt-8 border hover:border-transparent
+                        bg-transparent text-green-300 border-green-300/20
+                        animate-pulse hover:animate-none 
                         '>
-                        Contact Me
+                        Contact me
                     </button>
                 </div>
 
