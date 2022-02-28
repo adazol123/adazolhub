@@ -12,7 +12,7 @@ function Navlist({ mobile }) {
 
                     </>),
             href: '#home',
-            active: true,
+            active: false,
         },
         {
             name: 'Services',
@@ -52,7 +52,9 @@ function Navlist({ mobile }) {
             <ul className="list-reset flex justify-between">
                 {navMenu.map(item => {
                     return (
-                        <li key={item.name} className={item.active? 'fill-green-300 shadow rounded-xl bg-slate-800 py-1 px-3' : 'fill-current hover:fill-green-300 hover:shadow-inner rounded-xl hover:bg-slate-800 py-1 px-3'}>
+                        <li key={item.name} className={item.active
+                            ? 'fill-green-300 shadow rounded-xl bg-slate-800 py-1 px-3' 
+                            : 'fill-current hover:fill-green-300 hover:shadow-inner rounded-xl hover:bg-slate-800 py-1 px-3'}>
                             <a href={item.href} className=''>
                                 {item.icon}
                             </a>
