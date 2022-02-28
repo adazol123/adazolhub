@@ -10,9 +10,9 @@ import Coin from './svg/CoinSVG.svg';
 function Services() {
   return (
    <section id='Portfolio' className=" bg-gradient-to-tr from-[#030309] to-[#162731]
-   mx-auto w-full relative  min-h-screen snap-start scroll-mt-20 transition-all space-y-20 ">
-       <div className="container mx-auto px-4 mb-8 space-y-2 flex flex-col border-0">
-          <p className='bg-slate-800/30 w-max px-2 py-1 mt-4 text-xs text-green-300/50 text rounded-lg'> SERVICES</p>
+   mx-auto w-full relative  min-h-screen snap-start scroll-mt-16 transition-all space-y-20 ">
+       <div className="container mx-auto px-4 mb-4 space-y-2 flex flex-col border-0">
+          <p className='bg-slate-800/30 w-max px-2 py-1 text-xs text-green-300/50 text rounded-lg'> SERVICES</p>
           <h2 className='text-4xl font-bold'>
                WHAT IS OUR <span className='text-green-300'>GOAL</span>?
           </h2>
